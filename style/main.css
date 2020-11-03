@@ -347,5 +347,8 @@ a {
   }
   .google-map {
     height: 300px;
+  }
+  .showroom-two-text {
+    display: none;
   } 
 }
