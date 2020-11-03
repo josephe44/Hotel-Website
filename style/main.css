@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap'); 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+p {
+  margin: 10px 0;
+}
+h1 , h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.navbar {
+  background-color: #879eb3;
+  color: #fff;
+  height: 70px;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+/* showcase */
+.showcase {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/room-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+.showcase .grid {
+  overflow: visible;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+.showcase h1 {
+  font-size: 40px;
+}
+.showcase p {
+  margin: 20px 0;
+}
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+.showcase-form .form-control {
+  margin: 30px 0;
+} 
+.showcase-form input[type="text"],
+.showcase-form input[type="number"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becd;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+.showcase-form input:focus {
+  outline: none;
+}
+
+/* styling of showroom */
+.showroom {
+  padding: 50px 0px;
+}
+.showroom p {
+  text-align: center;
+}
+.showcaseroom-img .grid {
+  grid-template-columns: repeat(3, 1fr)
+}
+.showroom-text-1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  color: #333;
+}
+/* styling of showroom-2 */
+.showroom-two {
+  padding: 50px 0px;
+  background-color: rgb(4, 122, 237, 0.2);
+}
+.showroom-two .grid {
+  grid-template-columns: 60% 40%;
+  gap: 0px;
+}
+.showroom-two-text{
+  position: absolute;
+  bottom: 100px;
+  right: -300px;
+  left: 500px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  /* padding-right: 20px; */
+}
+.showroom-two-img {
+  position: relative;
+}
+
+/* styling showroom-two-services */
+.showroom-two-services {
+  padding: 50px 0px;
+}
+.services .grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.services-btn{
+  text-align: center;
+}
+.services-icons i, h4 {
+  display: block;
+  text-align: center;
+} 
+.services-icons p {
+ text-align: center;
+}
+/* styling showcase-room-three */
+.showcase-room-three {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/room-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.showcase-text i {
+  display: block;
+  text-align: center;
+} 
+.showcase-text h1 {
+  display: block;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  padding-top: 50px;
+  background-color: rgb(4, 122, 237, 0.2);
+}
+.footer-head .grid{
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-start;
+}
+
+
+/* STYLING FOR CONTACT PAGE */
+.contact {
+  padding: 50px 0;
+}
+.contact .grid {
+  align-items: flex-start;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.form-control-contact textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+.form-control-contact textarea:focus {
+  outline: none;
+}
+.form-control-contact textarea::placeholder {
+  padding: 10px;
+  outline: none;
+}
+.form-control-contact {
+  padding: 10px 0px;
+}
+.map {
+  background-color: rgb(232, 232, 232, 0.2);
+}
+.google-map {
+  padding-top: 50px;
+}
+
+/* STYLING FOR ROOM SECTION */
+.room {
+  padding: 50px 0;
+}
+.room-pic img {
+  width: 100%;
+  height: 300px;
+}
+
+
+
+/* utilities */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #879eb3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* Tablet and under */
+@media (max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .showcaseroom-img .grid,
+  .showroom-two .grid,
+  .services .grid,
+  .contact .grid,
+  .footer-head .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .showcase {
+    height: auto;
+  }
+  .showcase-text{
+    text-align: center;
+    
+  }
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+}
+
+/* mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
