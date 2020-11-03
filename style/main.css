@@ -28,6 +28,11 @@ a {
   text-decoration: none;
   color: #333;
 }
+
+
+
+
+/* styling for index.html */
 .navbar {
   background-color: #879eb3;
   color: #fff;
@@ -174,6 +179,11 @@ a {
   display: block;
   text-align: center;
 }
+/* End of styling for Index.html */
+
+
+
+
 
 /* footer */
 .footer {
@@ -184,6 +194,11 @@ a {
   grid-template-columns: repeat(3, 1fr);
   align-items: flex-start;
 }
+/* end of footer */
+
+
+
+
 
 
 /* STYLING FOR CONTACT PAGE */
@@ -217,11 +232,18 @@ a {
   padding: 10px 0px;
 }
 .map {
-  background-color: rgb(232, 232, 232, 0.2);
+  background-color: rgb(232, 232, 232, 0.5);
 }
 .google-map {
   padding-top: 50px;
 }
+/* end of contact-page */
+
+
+
+
+
+
 
 /* STYLING FOR ROOM SECTION */
 .room {
@@ -231,6 +253,8 @@ a {
   width: 100%;
   height: 300px;
 }
+
+/* end for styling room page */
 
 
 
@@ -318,4 +342,10 @@ a {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
   }
+  .room-pic img {
+    height: 150px;
+  }
+  .google-map {
+    height: 300px;
+  } 
 }
