@@ -298,7 +298,7 @@ a {
   }
   .showcase-text{
     text-align: center;
-    
+    margin: 40px;
   }
   .showcase-form {
     justify-self: center;
