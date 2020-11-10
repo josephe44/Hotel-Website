@@ -11,7 +11,7 @@ body {
   scroll-behavior: smooth;
 }
 p {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 h1 , h2 {
   font-weight: 500;
@@ -25,6 +25,7 @@ ul {
   list-style: none;
 }
 a {
+  font-size: 16px;
   text-decoration: none;
   color: #333;
 }
@@ -47,12 +48,17 @@ a {
   display: flex;
 }
 .navbar a {
-  color: #fff;
+  color: #ffffffe5;
   padding: 10px;
   margin: 0 5px;
 }
 .navbar a:hover {
   border-bottom: 2px #fff solid;
+}
+.logo {
+  margin-top: 10px;
+  width: 55px;
+  height: 55px;
 }
 /* showcase */
 .showcase {
@@ -72,10 +78,11 @@ a {
   gap: 30px;
 }
 .showcase h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 .showcase p {
-  margin: 20px 0;
+  font-size: 14px;
+  margin: 10px 0;
 }
 .showcase-form {
   position: relative;
@@ -113,9 +120,10 @@ a {
   grid-template-columns: repeat(3, 1fr)
 }
 .showroom-text-1 {
+  margin-top: 20px;
   text-align: center;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 20px;
   color: #333;
 }
 /* styling of showroom-2 */
@@ -251,6 +259,7 @@ a {
 
 /* STYLING FOR ROOM SECTION */
 .room {
+  background-image: url(../images/bg-pattern-top-desktop.svg);
   padding: 50px 0;
 }
 .room-pic img {
